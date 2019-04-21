@@ -1,15 +1,20 @@
 import React from 'react'
 import ProductsContainer from './ProductsContainer'
 import CartContainer from './CartContainer'
+import { Container, Row, Col } from 'reactstrap';
 
 const App = () => (
-  <div>
-    <h2>Shopping Cart Example</h2>
-    <hr/>
-    <ProductsContainer />
-    <hr/>
-    <CartContainer />
-  </div>
-)
+    <Container>
+      <Row>
+        <Col>
+        <h2>Shopping Cart Example</h2>
+        </Col>
+        <Col>
+        <CartContainer />
+        </Col>
+      </Row>
+      <ProductsContainer />
+    </Container>
+);
 
 export default App
